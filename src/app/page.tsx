@@ -1,4 +1,7 @@
 import React from "react";
+import { Button } from "./components/ui/button";
+import { Input } from "./components/ui/input";
+import { Label } from "./components/ui/label";
 
 const Home = () => {
   return (
@@ -10,6 +13,13 @@ const Home = () => {
         error quia molestias dignissimos doloribus animi provident repudiandae
         inventore corporis.
       </p>
+      <Button className="mt-4 bg-shop-light-green cursor-pointer hover:bg-shop-dark-green hover:text-light-text">
+        Click Me
+      </Button>
+      <Label htmlFor="email" className="mt-4">
+        Email
+      </Label>
+      <Input id="email" placeholder="example@email.com" className="mt-4" />
     </div>
   );
 };

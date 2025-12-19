@@ -1,4 +1,6 @@
+import Footer from "./components/common/Footer";
 import "./globals.css";
+import Header from "@/app/components/common/Header";
 
 export default function RootLayout({
   children,
@@ -7,7 +9,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-poppins antialiased`}>{children}</body>
+      <body className={`font-poppins antialiased`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
